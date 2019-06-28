@@ -27,13 +27,13 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec lxterminal
 
 # kill focused window
 bindsym $mod+Shift+x kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -combi-modi drun#ssh -theme solarized -font "hack 10" -show combi 
+bindsym $mod+d exec --no-startup-id rofi -combi-modi drun#ssh -theme solarized -font "hack 10" -show combi --terminal lxterminal 
 
 
 ################################################################################################

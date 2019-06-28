@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+    playground:
+        container_name: playground
+        image: myplayground:latest
+        command: zsh  
+        ports:
+            - "5901:5901"
+            - "8080:8080"
+        volumes:
+            - ~/.ssh:/root/.ssh:ro
+        tty: true
+        stdin_open: true
+    redis:
+        container_name: redis
+        image: redis:3.2
+        ports:
+            - "6379:26379"
